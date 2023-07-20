@@ -1,0 +1,13 @@
+<h1>Example App: Home</h1>
+
+<ul>
+    {{#each messages}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+<form action="/message" method="post">
+  <label for="messageText">Message:</label>
+  <input type="text" id="messageText" name="messageText" />
+  <button type="submit">send</button>
+</form>
